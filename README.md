@@ -38,7 +38,7 @@
    * Положите `pdftk.exe` в папку поддержки AutoCAD (например, `C:\Program Files\Autodesk\AutoCAD 20XX\Support\`), в любую папку из Support File Search Path, либо просто рядом с файлом `PPDF.lsp`.
 
 ## ⚙️ Установка
-1. Скачайте файл `PPDF.lsp` из раздела [Releases](ссылка_на_релизы).
+1. Скачайте файл `PPDF.lsp` из раздела [Releases](https://github.com/Mozzila-ru/PPDF/releases).
 2. В AutoCAD введите команду `APPLOAD` (или `_APPLOAD`).
 3. Выберите файл `PPDF.lsp` и нажмите "Загрузить".
 4. *(Опционально)* Добавьте папку со скриптом в "Безопасные пути" (Trusted Locations) в настройках AutoCAD, чтобы избежать предупреждений безопасности.
