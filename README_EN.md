@@ -18,9 +18,6 @@ Huge thanks to the authors for their open code and their contribution to the Aut
 
 ---
 
-## 📄 License
-This project is distributed under the MIT License. See the [LICENSE](LICENSE) file for details.
-
 ## 🚀 Features
 * **4 frame selection modes:**
   1. **Manual** — click blocks manually (with undo of the last selection).
@@ -31,18 +28,19 @@ This project is distributed under the MIT License. See the [LICENSE](LICENSE) fi
 * **Automatic numbering:** continues the sequence if PDFs already exist in the folder (format `prefix_suffix_NNN.pdf`).
 * **PDF merge:** automatically merges all sheets into one file (`prefix_suffix_merged.pdf`) using `pdftk.exe`.
 * **Preflight check:** a warning if the target folder already contains PDF files (with options to clear or archive).
+* **Bilingual interface (RU / EN):** switch the language with the "LNG" button; the choice is saved in the settings.
 * **Settings persistence:** all parameters are saved to `%APPDATA%\PPDF\ppdf_settings.cfg`.
 
 ## 📦 Requirements
 1. **AutoCAD** 2014 or newer.
-2. **pdftk.exe** (only if the PDF merge feature is needed).
-   * Download [pdftk Server](https://www.pdflabs.com/tools/pdftk-server/) or [pdftk-java](https://gitlab.com/pdftk-java/pdftk).
-   * Place `pdftk.exe` in the AutoCAD support folder (e.g. `C:\Program Files\Autodesk\AutoCAD 20XX\Support\`), in any folder from the Support File Search Path, or simply next to the `PPDF.lsp` file.
+2. **pdftk.exe** — only for the PDF merge feature (already included in the release archive together with `libiconv2.dll`).
+   * If you need it separately: [pdftk Server](https://www.pdflabs.com/tools/pdftk-server/) or [pdftk-java](https://gitlab.com/pdftk-java/pdftk).
+   * `pdftk.exe` and `libiconv2.dll` must be placed next to the script, in the AutoCAD support folder (e.g. `C:\Program Files\Autodesk\AutoCAD 20XX\Support\`), or in any folder from the Support File Search Path.
 
 ## ⚙️ Installation
-1. Download the `PPDF.lsp` file from the [Releases](https://github.com/Mozzila-ru/PPDF/releases) section.
+1. Download the latest release archive from the [Releases](https://github.com/Mozzila-ru/PPDF/releases) section and unpack it into a convenient folder (e.g. `C:\PPDF\`). It already contains the script (`PPDF_vXX.lsp`), as well as `pdftk.exe` and `libiconv2.dll`.
 2. In AutoCAD, run the `APPLOAD` command (or `_APPLOAD`).
-3. Select the `PPDF.lsp` file and click "Load".
+3. Select the script file (`PPDF_vXX.lsp`) and click "Load".
 4. *(Optional)* Add the script folder to "Trusted Locations" in AutoCAD settings to avoid security warnings.
 
 ## 🖨 Usage
@@ -60,12 +58,15 @@ This project is distributed under the MIT License. See the [LICENSE](LICENSE) fi
 4. Follow the command-line prompts to select frames.
 5. When plotting is complete, the script will offer to merge the files into a single PDF.
 
-> 💡 **"Silent printing" tip:** If a PDF viewer opens automatically when plotting, click the **"?"** button -> **"Silent printing"** in the PPDF window to learn how to disable this behavior in the plotter's PC3 file settings.
+> 💡 **"Silent printing" tip:** If a PDF viewer opens automatically when plotting, click the **"?"** button → **"Silent printing"** in the PPDF window to learn how to disable this behavior in the plotter's PC3 file settings.
 
 ## 📂 Where are the settings stored?
 Settings are stored in the text file `ppdf_settings.cfg` in the folder:
 `%APPDATA%\PPDF\` (usually `C:\Users\YourName\AppData\Roaming\PPDF\`).
 The DCL dialog files are also generated there temporarily.
+
+## 🐞 Feedback
+Found a bug or have an idea? Open an [Issue](https://github.com/Mozzila-ru/PPDF/issues) in this repository.
 
 ## 📄 License
 This project is distributed under the MIT License. See the [LICENSE](LICENSE) file for details.
