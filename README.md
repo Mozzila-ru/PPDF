@@ -45,6 +45,9 @@
 
 ## 🖨 Использованиен
 ![Главное окно программы PPDF](images/PPDF_interface.jpg)
+
+![PPDF main window (English)](images/PPDF_interface_EN.jpg)
+
 1. Введите команду **`PPDF`** в командную строку AutoCAD.
 2. Настройте параметры в диалоговом окне:
    * Выберите режим печати.
