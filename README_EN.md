@@ -70,3 +70,8 @@ Found a bug or have an idea? Open an [Issue](https://github.com/Mozzila-ru/PPDF/
 
 ## 📄 License
 This project is distributed under the MIT License. See the [LICENSE](LICENSE) file for details.
+
+## 🧩 Third-party components
+The release archive includes third-party programs distributed under their own licenses (they are not part of the PPDF code):
+- **[pdftk](https://www.pdflabs.com/tools/pdftk-server/)** (PDF Labs) — PDF merging. Licensed under **GNU GPL v2**.
+- **[libiconv2.dll](https://www.gnu.org/software/libiconv/)** (GNU libiconv) — an encoding-conversion library required by `pdftk.exe`. Licensed under **GNU LGPL**.
